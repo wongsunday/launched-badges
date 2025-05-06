@@ -1,0 +1,19 @@
+// Generic badge
+export * from './generic/SocialBadge';
+
+// Platform-specific badges
+export * from './lovable/LovableBadge';
+export * from './reddit/RedditBadge';
+export * from './hackernews/HackerNewsBadge';
+export * from './facebook/FacebookBadge';
+export * from './instagram/InstagramBadge';
+export * from './twitter/TwitterBadge';
+
+// Types
+export type { LovableBadgeProps } from './lovable/LovableBadge';
+export type { RedditBadgeProps } from './reddit/RedditBadge';
+export type { HackerNewsBadgeProps } from './hackernews/HackerNewsBadge';
+export type { FacebookBadgeProps } from './facebook/FacebookBadge';
+export type { InstagramBadgeProps } from './instagram/InstagramBadge';
+export type { SocialBadgeProps } from './generic/SocialBadge';
+export type { TwitterBadgeProps } from './twitter/TwitterBadge';

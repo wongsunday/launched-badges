@@ -1,0 +1,19 @@
+{
+  "name": "launched-badges",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter \"@sundaywong/launched-badges\" build",
+    "test": "pnpm --filter \"@sundaywong/launched-badges\" test",
+    "lint": "pnpm --filter \"@sundaywong/launched-badges\" lint",
+    "dev": "pnpm --filter \"demo\" dev"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+} 

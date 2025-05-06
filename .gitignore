@@ -1,0 +1,50 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+.tsup/
+
+# Testing output
+coverage/
+.vitest/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Lock files (uncomment the one you're not using)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional: Mac-specific metadata
+.AppleDouble
+.LSOverride
+
+# Optional: Environment files
+.env*
+
+docs/
+
+# Temporarily exclude GitHub Actions workflows
+.github/
