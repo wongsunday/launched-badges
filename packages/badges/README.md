@@ -17,7 +17,7 @@ pnpm add @sundaywong/launched-badges
 
 #### Lovable Badge
 
-<img src="../../examples/previews/lovable-light.svg" alt="Lovable Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/lovable-dark.svg" alt="Lovable Badge Dark" width="220"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/lovable-light.svg" alt="Lovable Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/lovable-dark.svg" alt="Lovable Badge Dark" width="220"/>
 
 ```jsx
 import { LovableBadge } from '@sundaywong/launched-badges';
@@ -35,7 +35,7 @@ const MyComponent = () => {
 ```
 
 #### Reddit Badge
-<img src="../../examples/previews/reddit-light.svg" alt="Reddit Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/reddit-dark.svg" alt="Reddit Badge Dark" width="220"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/reddit-light.svg" alt="Reddit Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/reddit-dark.svg" alt="Reddit Badge Dark" width="220"/>
 
 ```jsx
 import { RedditBadge } from '@sundaywong/launched-badges';
@@ -52,7 +52,7 @@ const MyComponent = () => {
 ```
 
 #### Hacker News Badge
-<img src="../../examples/previews/hackernews-light.svg" alt="Hacker News Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/hackernews-dark.svg" alt="Hacker News Badge Dark" width="250"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/hackernews-light.svg" alt="Hacker News Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/hackernews-dark.svg" alt="Hacker News Badge Dark" width="250"/>
 
 ```jsx
 import { HackerNewsBadge } from '@sundaywong/launched-badges';
@@ -69,7 +69,7 @@ const MyComponent = () => {
 ```
 
 #### Facebook Badge
-<img src="../../examples/previews/facebook-light.svg" alt="Facebook Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/facebook-dark.svg" alt="Facebook Badge Dark" width="250"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/facebook-light.svg" alt="Facebook Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/facebook-dark.svg" alt="Facebook Badge Dark" width="250"/>
 
 ```jsx
 import { FacebookBadge } from '@sundaywong/launched-badges';
@@ -87,7 +87,7 @@ const MyComponent = () => {
 ```
 
 #### Instagram Badge
-<img src="../../examples/previews/instagram-light.svg" alt="Instagram Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/instagram-dark.svg" alt="Instagram Badge Dark" width="250"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/instagram-light.svg" alt="Instagram Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/instagram-dark.svg" alt="Instagram Badge Dark" width="250"/>
 
 ```jsx
 import { InstagramBadge } from '@sundaywong/launched-badges';
@@ -105,7 +105,7 @@ const MyComponent = () => {
 ```
 
 #### Twitter Badge
-<img src="../../examples/previews/x-light.svg" alt="X(Twitter) Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="../../examples/previews/x-dark.svg" alt="X(Twitter) Badge Dark" width="220"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/x-light.svg" alt="X(Twitter) Badge Light" width="220"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/x-dark.svg" alt="X(Twitter) Badge Dark" width="220"/>
 ```jsx
 import { TwitterBadge } from '@sundaywong/launched-badges';
 
