@@ -168,21 +168,21 @@ export const SocialBadge: React.FC<SocialBadgeProps> = ({
     switch (iconType) {
       case 'upvote-arrow':
         return (
-          <svg x="13" y="-2" width="14" height="14" viewBox="0 0 24 24" fill="none" strokeWidth="3" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
+          <svg x="13.5" y="-2" width="14" height="14" viewBox="0 0 24 24" fill="none" strokeWidth="3" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
             <path d="m5 12 7-7 7 7"/>
             <path d="M12 19V5"/>
           </svg>
         );
       case 'likes':
         return (
-          <svg x="14" y="-1" width="12" height="12" viewBox="0 0 24 24" fill="none" strokeWidth="2" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
+          <svg x="14.5" y="-1" width="12" height="12" viewBox="0 0 24 24" fill="none" strokeWidth="2" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
             <path d="M7 10v12"/>
             <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>
           </svg>
         );
       case 'followers':
         return (
-          <svg x="14" y="-1" width="12" height="12" viewBox="0 0 24 24" fill="none" strokeWidth="2" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
+          <svg x="14.5" y="-1" width="12" height="12" viewBox="0 0 24 24" fill="none" strokeWidth="2" stroke={textColor} strokeLinecap="round" strokeLinejoin="round">
             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
             <circle cx="9" cy="7" r="4"/>
             <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>

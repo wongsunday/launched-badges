@@ -1,7 +1,30 @@
 # Launched Badges
 
-Reusable badges to show off your product launches across platforms.
-Currently supports: **Lovable**, **Reddit**, **Hacker News**, **X**, **Facebook**, **Instagram**
+> **Universal badges for your product launches.**
+> Product Hunt isn’t the only place. Celebrate launches anywhere — Lovable, Reddit, X, Hacker News, and beyond — with drop-in React components.
+
+**Launched Badges** is a set of reusable, plug-and-play React components that showcase your product launches across platforms. Whether it’s Lovable, Reddit, X, or Hacker News, highlight your milestones where your users are — not just on Product Hunt.
+
+## 🚀 Features
+
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X — and more
+- 🎨 Light/dark themes with flexible sizing and layout control
+- ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
+- 🖼️ Scalable SVG components built for React + Tailwind — plug-and-play and pixel-perfect
+- 🧩 Powerful base component for full customizability
+
+## 🔧 Prerequisites
+
+Launched Badges are built with React and styled using Tailwind CSS.
+Please ensure both are installed and properly configured in your project.
+
+```json
+{
+  "react": "^18.0.0 || ^19.0.0",
+  "react-dom": "^18.0.0 || ^19.0.0",
+  "tailwindcss": "^3.0.0 || ^4.0.0"
+}
+```
 
 ## Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "@sundaywong/launched-badges",
-  "version": "0.1.1",
-  "description": "Universal launch badges for your product. Show off launches on Lovable, Reddit, X, Hacker News, and more — not just Product Hunt.",
+  "version": "0.1.2",
+  "description": "Universal badges for your product launches — celebrate on Lovable, Reddit, X, Hacker News, and more, not just Product Hunt.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
