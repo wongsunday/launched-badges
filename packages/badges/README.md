@@ -10,19 +10,18 @@
 - 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X — and more
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
-- 🖼️ Scalable SVG components built for React + Tailwind — plug-and-play and pixel-perfect
+- 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
 - 🧩 Powerful base component for full customizability
 
 ## 🔧 Prerequisites
 
-Launched Badges are built with React and styled using Tailwind CSS.
-Please ensure both are installed and properly configured in your project.
+Launched Badges are built with React.
+Please ensure React is installed and properly configured in your project.
 
 ```json
 {
   "react": "^18.0.0 || ^19.0.0",
-  "react-dom": "^18.0.0 || ^19.0.0",
-  "tailwindcss": "^3.0.0 || ^4.0.0"
+  "react-dom": "^18.0.0 || ^19.0.0"
 }
 ```
 
