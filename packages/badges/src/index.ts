@@ -8,6 +8,7 @@ export * from './hackernews/HackerNewsBadge';
 export * from './facebook/FacebookBadge';
 export * from './instagram/InstagramBadge';
 export * from './twitter/TwitterBadge';
+export * from './microlaunch/MicroLaunchBadge';
 
 // Types
 export type { LovableBadgeProps } from './lovable/LovableBadge';
@@ -17,3 +18,4 @@ export type { FacebookBadgeProps } from './facebook/FacebookBadge';
 export type { InstagramBadgeProps } from './instagram/InstagramBadge';
 export type { SocialBadgeProps } from './generic/SocialBadge';
 export type { TwitterBadgeProps } from './twitter/TwitterBadge';
+export type { MicroLaunchBadgeProps } from './microlaunch/MicroLaunchBadge';

@@ -6,13 +6,14 @@ import {
   FacebookBadge, 
   InstagramBadge,
   TwitterBadge,
+  MicroLaunchBadge,
   SocialBadge 
 } from '@sundaywong/launched-badges';
 
 type SizeMode = 'width' | 'height';
 type IconType = 'upvote' | 'upvote-arrow' | 'likes' | 'followers';
 type DisplayMode = 'count' | 'link' | 'none';
-type Platform = 'lovable' | 'reddit' | 'hackernews' | 'facebook' | 'instagram' | 'twitter' | 'generic';
+type Platform = 'lovable' | 'reddit' | 'hackernews' | 'facebook' | 'instagram' | 'twitter' | 'microlaunch' | 'generic';
 
 function App() {
   const [platform, setPlatform] = useState<Platform>('lovable');
@@ -37,6 +38,7 @@ function App() {
     facebook: 'https://facebook.com/...',
     instagram: 'https://instagram.com/...',
     twitter: 'https://x.com/...',
+    microlaunch: 'https://microlaunch.net/p/<project-slug>',
     generic: 'https://example.com/demo-project'
   };
 
@@ -48,6 +50,7 @@ function App() {
     facebook: 'likes',
     instagram: 'likes',
     twitter: 'likes',
+    microlaunch: 'upvote',
     generic: 'upvote'
   };
 
@@ -106,6 +109,8 @@ function App() {
         return <InstagramBadge {...commonProps} />;
       case 'twitter':
         return <TwitterBadge {...commonProps} />;
+      case 'microlaunch':
+        return <MicroLaunchBadge {...commonProps} />;
       case 'generic':
         return <SocialBadge platformName={platformName} {...commonProps} />;
     }
@@ -242,6 +247,17 @@ function App() {
                   }`}
                 >
                   X (Twitter)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handlePlatformChange('microlaunch')}
+                  className={`px-3 py-2 rounded-md ${
+                    platform === 'microlaunch'
+                      ? 'bg-purple-500 text-white'
+                      : 'bg-white border border-gray-300 text-gray-700'
+                  }`}
+                >
+                  MicroLaunch
                 </button>
                 <button
                   type="button"

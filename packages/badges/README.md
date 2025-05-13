@@ -7,11 +7,26 @@
 
 ## 🚀 Features
 
-- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X — and more
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, MicroLaunch
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
 - 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
 - 🧩 Powerful base component for full customizability
+
+## ✨ Try it now
+
+Visit our interactive demo at [Homepage](https://launched-badges.lovable.app/) to customize and preview badges for your projects.
+
+## 📋 Supported Platforms
+
+- **Lovable**
+- **Reddit**
+- **Hacker News**
+- **X (Twitter)**
+- **Facebook**
+- **Instagram**
+- **MicroLaunch**
+- **Custom** - Create your own badges with the generic base component
 
 ## 🔧 Prerequisites
 
@@ -139,6 +154,22 @@ const MyComponent = () => {
       height={54}
       featuredText="FIND US ON"
       displayMode="link"
+    />
+  );
+};
+```
+
+#### MicroLaunch Badge
+```jsx
+import { MicroLaunchBadge } from '@sundaywong/launched-badges';
+
+const MyComponent = () => {
+  return (
+    <MicroLaunchBadge 
+      count={567}
+      linkUrl="https://microlaunch.net/p/<project-slug>"
+      theme="light"
+      iconType="upvote"
     />
   );
 };
