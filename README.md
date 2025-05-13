@@ -52,6 +52,8 @@ pnpm add @sundaywong/launched-badges
 
 ## 🧩 Usage
 
+### LovableBadge as example
+
 ```jsx
 import { LovableBadge } from '@sundaywong/launched-badges';
 
@@ -76,6 +78,26 @@ import { LovableBadge } from '@sundaywong/launched-badges';
 // Custom dimensions
 <LovableBadge count={359} width={300} linkUrl="https://example.com/my-project" />
 <LovableBadge count={359} height={80} linkUrl="https://example.com/my-project" />
+```
+
+### Use Other Badges similarly
+
+```jsx
+// Use other platform badges the same way
+import { 
+  RedditBadge, 
+  HackerNewsBadge, 
+  FacebookBadge,
+  InstagramBadge,
+  TwitterBadge,
+  MicroLaunchBadge
+} from '@sundaywong/launched-badges';
+
+// Example with Reddit badge
+<RedditBadge count={42} theme="dark" linkUrl="https://reddit.com/r/..." />
+
+// Example with MicroLaunch badge
+<MicroLaunchBadge count={570} theme="light" linkUrl="https://microlaunch.net/p/..." />
 ```
 
 ## ✨ Showcase
