@@ -88,9 +88,13 @@ Here are some examples of the badges in action:
   <img src="examples/previews/x-light.svg" alt="X (Twitter) Badge Light" width="220"/>
 </p>
 <p align="center">
-  <img src="examples/previews/instagram-dark.svg" alt="Instagram Badge Dark" width="260"/>&nbsp;&nbsp;&nbsp; 
+  <img src="examples/previews/instagram-dark.svg" alt="Instagram Badge Dark" width="250"/>&nbsp;&nbsp;&nbsp; 
   <img src="examples/previews/hackernews-dark.svg" alt="Hacker News Badge Dark" width="250"/>&nbsp;&nbsp;&nbsp;
   <img src="examples/previews/facebook-dark.svg" alt="Facebook Badge Dark" width="250"/>
+</p>
+<p align="center">
+  <img src="examples/previews/microlaunch-light.svg" alt="MicroLaunch Badge Light" width="250"/>&nbsp;&nbsp;&nbsp; 
+  <img src="examples/previews/microlaunch-dark.svg" alt="MicroLaunch Badge Dark" width="250"/>&nbsp;&nbsp;&nbsp;
 </p>
 
 

@@ -160,13 +160,14 @@ const MyComponent = () => {
 ```
 
 #### MicroLaunch Badge
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/microlaunch-light.svg" alt="MicroLaunch Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/microlaunch-dark.svg" alt="MicroLaunch Badge Dark" width="250"/>
 ```jsx
 import { MicroLaunchBadge } from '@sundaywong/launched-badges';
 
 const MyComponent = () => {
   return (
     <MicroLaunchBadge 
-      count={567}
+      count={570}
       linkUrl="https://microlaunch.net/p/<project-slug>"
       theme="light"
       iconType="upvote"
