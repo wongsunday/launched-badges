@@ -37,9 +37,9 @@ export const MicroLaunchBadge: React.FC<MicroLaunchBadgeProps> = ({
             <path d="M63.6719 34.1406H83.2188V70H63.6719V34.1406ZM38.4297 34.1406H57.8711V87.9297H38.4297V34.1406Z" fill="white" />
             <defs>
                 <linearGradient id="paint0_linear_10_66" x1="91.5" y1="10.5" x2="30.5" y2="105.5" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0094FF" />
-                    <stop offset="0.51" stop-color="#B741FF" />
-                    <stop offset="1" stop-color="#8000FF" />
+                    <stop stopColor="#0094FF" />
+                    <stop offset="0.51" stopColor="#B741FF" />
+                    <stop offset="1" stopColor="#8000FF" />
                 </linearGradient>
             </defs>
         </svg>

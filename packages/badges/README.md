@@ -15,7 +15,7 @@
 
 ## ✨ Try it now
 
-Visit our interactive demo at [Homepage](https://launched-badges.lovable.app/) to customize and preview badges for your projects.
+Visit our interactive demo on [Homepage](https://launched-badges.lovable.app/) to customize and preview badges for your projects.
 
 ## 📋 Supported Platforms
 
