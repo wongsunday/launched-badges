@@ -9,6 +9,7 @@ export * from './facebook/FacebookBadge';
 export * from './instagram/InstagramBadge';
 export * from './twitter/TwitterBadge';
 export * from './microlaunch/MicroLaunchBadge';
+export * from './linkedin/LinkedInBadge';
 
 // Types
 export type { LovableBadgeProps } from './lovable/LovableBadge';

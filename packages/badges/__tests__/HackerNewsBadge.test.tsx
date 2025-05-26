@@ -1,13 +1,7 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { HackerNewsBadge } from '../src/hackernews/HackerNewsBadge';
-import * as mockHooks from '../src/mockHooks';
-
-// Mock the useMockHackerNewsCount hook
-vi.mock('../src/mockHooks', () => ({
-  useMockHackerNewsCount: vi.fn().mockReturnValue(567),
-}));
 
 describe('HackerNewsBadge', () => {
   it('renders with count prop', () => {

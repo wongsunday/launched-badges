@@ -7,7 +7,7 @@
 
 ## 🚀 Features
 
-- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, MicroLaunch
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, MicroLaunch
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
 - 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
@@ -25,6 +25,7 @@ Visit our interactive demo on [Homepage](https://launched-badges.lovable.app/) t
 - **X (Twitter)**
 - **Facebook**
 - **Instagram**
+- **LinkedIn**
 - **MicroLaunch**
 - **Custom** - Create your own badges with the generic base component
 
@@ -136,6 +137,25 @@ const MyComponent = () => {
       featuredText="FOLLOW US ON"
       linkUrl="https://instagram.com/..."
       iconType="followers"
+    />
+  );
+};
+```
+
+#### LinkedIn Badge
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/linkedin-light.svg" alt="Linkedin Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/Linkedin-dark.svg" alt="Linkedin Badge Dark" width="250"/>
+
+```jsx
+import { LinkedInBadge } from '@sundaywong/launched-badges';
+
+const MyComponent = () => {
+  return (
+    <LinkedInBadge 
+      count={101}
+      featuredText="FIND US ON"
+      linkUrl="https://linkedin.com/..."
+      iconType="likes"
+      theme="light"
     />
   );
 };

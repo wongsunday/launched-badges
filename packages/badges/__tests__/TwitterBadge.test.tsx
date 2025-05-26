@@ -1,9 +1,7 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { TwitterBadge } from '../src/twitter/TwitterBadge';
-
-// No mock hook for Twitter, assuming it just displays the count prop
 
 describe('TwitterBadge', () => {
   it('renders with count prop', () => {

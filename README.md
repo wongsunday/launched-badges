@@ -7,7 +7,7 @@
 
 ## 🚀 Features
 
-- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, MicroLaunch
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, MicroLaunch
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
 - 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
@@ -25,6 +25,7 @@ Visit our interactive demo on [Homepage](https://launched-badges.lovable.app/) t
 - **X (Twitter)**
 - **Facebook**
 - **Instagram**
+- **LinkedIn**
 - **MicroLaunch**
 - **Custom** - Create your own badges with the generic base component
 
@@ -89,12 +90,16 @@ import {
   HackerNewsBadge, 
   FacebookBadge,
   InstagramBadge,
+  LinkedInBadge,
   TwitterBadge,
   MicroLaunchBadge
 } from '@sundaywong/launched-badges';
 
 // Example with Reddit badge
 <RedditBadge count={42} theme="dark" linkUrl="https://reddit.com/r/..." />
+
+// Example with LinkedIn badge
+<LinkedInBadge count={101} theme="light" linkUrl="https://linkedin.com/..." />
 
 // Example with MicroLaunch badge
 <MicroLaunchBadge count={570} theme="light" linkUrl="https://microlaunch.net/p/..." />

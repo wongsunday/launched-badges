@@ -1,6 +1,6 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { RedditBadge } from '../src/reddit/RedditBadge';
 
 describe('RedditBadge', () => {

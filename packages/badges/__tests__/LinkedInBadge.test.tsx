@@ -1,19 +1,19 @@
-import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { describe, expect, it } from 'vitest';
-import { LovableBadge } from '../src/lovable/LovableBadge';
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import { LinkedInBadge } from '../src/linkedin/LinkedInBadge';
 
-describe('LovableBadge', () => {
+describe('LinkedInBadge', () => {
   it('renders with count prop', () => {
-    render(<LovableBadge count={42} />);
+    render(<LinkedInBadge count={42} />);
     
     expect(screen.getByText('42')).toBeInTheDocument();
   });
   
   it('uses light theme by default', () => {
-    const { container } = render(<LovableBadge count={42} />);
+    const { container } = render(<LinkedInBadge count={42} />);
     
-    // In light theme, expect the badge to have Lovable's light pink color
+    // In light theme, expect the badge to have LinkedIn's light blue color
     const svg = container.querySelector('svg') as SVGElement;
     const rect = svg.querySelector('rect') as SVGRectElement;
     
@@ -21,31 +21,32 @@ describe('LovableBadge', () => {
   });
   
   it('renders with dark theme when specified', () => {
-    const { container } = render(<LovableBadge count={42} theme="dark" />);
+    const { container } = render(<LinkedInBadge count={42} theme="dark" />);
     
     // In dark theme, expect the badge to have dark background
     const svg = container.querySelector('svg') as SVGElement;
     const rect = svg.querySelector('rect') as SVGRectElement;
     
-    expect(rect).toHaveAttribute('fill', '#201e1e');
+    expect(rect).toHaveAttribute('fill', '#1E2226');
   });
   
-  it('displays the Lovable platform name', () => {
-    render(<LovableBadge count={42} />);
+  it('displays the LinkedIn platform name', () => {
+    render(<LinkedInBadge count={42} />);
     
-    expect(screen.getByText('Lovable')).toBeInTheDocument();
+    expect(screen.getByText('LinkedIn')).toBeInTheDocument();
   });
 
-  it('renders with upvote icon by default', () => {
-    const { container } = render(<LovableBadge count={42} />);
+  it('renders with likes icon by default', () => {
+    const { container } = render(<LinkedInBadge count={42} />);
     
-    // The default upvote icon is a polygon
-    const polygon = container.querySelector('polygon');
-    expect(polygon).toBeInTheDocument();
+    // The default likes icon is a polygon
+    const svgIcon = container.querySelectorAll('svg')[2]; // The icon SVG
+    const paths = svgIcon.querySelectorAll('path');
+    expect(paths.length).toBeGreaterThan(0); 
   });
   
   it('renders with likes icon when specified', () => {
-    const { container } = render(<LovableBadge count={42} iconType="likes" />);
+    const { container } = render(<LinkedInBadge count={42} iconType="likes" />);
     
     // The likes icon is a path containing specific attributes
     const svg = container.querySelectorAll('svg')[2]; // The likes icon is the third SVG
@@ -54,27 +55,27 @@ describe('LovableBadge', () => {
   });
   
   it('applies custom width when specified', () => {
-    const { container } = render(<LovableBadge count={42} width={300} />);
+    const { container } = render(<LinkedInBadge count={42} width={300} />);
     
     const badgeContainer = container.firstChild as HTMLElement;
     expect(badgeContainer).toHaveStyle('width: 300px');
   });
   
   it('applies custom height when specified', () => {
-    const { container } = render(<LovableBadge count={42} height={100} />);
+    const { container } = render(<LinkedInBadge count={42} height={100} />);
     
     const badgeContainer = container.firstChild as HTMLElement;
     expect(badgeContainer).toHaveStyle('height: 100px');
   });
   
   it('displays a custom featured text when provided', () => {
-    render(<LovableBadge count={42} featuredText="TRENDING ON" />);
+    render(<LinkedInBadge count={42} featuredText="TRENDING ON" />);
     
     expect(screen.getByText('TRENDING ON')).toBeInTheDocument();
   });
   
   it('truncates featured text longer than 15 characters', () => {
-    render(<LovableBadge count={42} featuredText="THIS IS A VERY LONG FEATURED TEXT" />);
+    render(<LinkedInBadge count={42} featuredText="THIS IS A VERY LONG FEATURED TEXT" />);
     
     expect(screen.getByText('THIS IS A VERY')).toBeInTheDocument();
     expect(screen.queryByText('THIS IS A VERY LONG FEATURED TEXT')).not.toBeInTheDocument();

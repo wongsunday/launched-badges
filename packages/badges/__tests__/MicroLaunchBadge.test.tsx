@@ -1,8 +1,7 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { MicroLaunchBadge } from '../src/microlaunch/MicroLaunchBadge';
-
 
 describe('MicroLaunchBadge', () => {
   it('renders with count prop', () => {

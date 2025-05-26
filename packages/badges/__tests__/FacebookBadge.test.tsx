@@ -1,13 +1,7 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { FacebookBadge } from '../src/facebook/FacebookBadge';
-import * as mockHooks from '../src/mockHooks';
-
-// Mock the useMockFacebookCount hook
-vi.mock('../src/mockHooks', () => ({
-  useMockFacebookCount: vi.fn().mockReturnValue('10k+'),
-}));
 
 describe('FacebookBadge', () => {
   it('renders with count prop', () => {

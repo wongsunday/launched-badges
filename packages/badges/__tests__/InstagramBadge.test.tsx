@@ -1,13 +1,8 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { InstagramBadge } from '../src/instagram/InstagramBadge';
-import * as mockHooks from '../src/mockHooks';
 
-// Mock the useMockInstagramCount hook
-vi.mock('../src/mockHooks', () => ({
-  useMockInstagramCount: vi.fn().mockReturnValue(9876),
-}));
 
 describe('InstagramBadge', () => {
   it('renders with count prop', () => {
