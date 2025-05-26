@@ -143,7 +143,7 @@ const MyComponent = () => {
 ```
 
 #### LinkedIn Badge
-<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/linkedin-light.svg" alt="Linkedin Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/Linkedin-dark.svg" alt="Linkedin Badge Dark" width="250"/>
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/linkedin-light.svg" alt="Linkedin Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/linkedin-dark.svg" alt="Linkedin Badge Dark" width="250"/>
 
 ```jsx
 import { LinkedInBadge } from '@sundaywong/launched-badges';
