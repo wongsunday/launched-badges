@@ -7,7 +7,7 @@
 
 ## 🚀 Features
 
-- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, MicroLaunch
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, GitHub, MicroLaunch
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
 - 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
@@ -26,6 +26,7 @@ Visit our interactive demo on [Homepage](https://launched-badges.lovable.app/) t
 - **Facebook**
 - **Instagram**
 - **LinkedIn**
+- **GitHub**
 - **MicroLaunch**
 - **Custom** - Create your own badges with the generic base component
 
@@ -91,12 +92,16 @@ import {
   FacebookBadge,
   InstagramBadge,
   LinkedInBadge,
+  GitHubBadge,
   TwitterBadge,
   MicroLaunchBadge
 } from '@sundaywong/launched-badges';
 
 // Example with Reddit badge
 <RedditBadge count={42} theme="dark" linkUrl="https://reddit.com/r/..." />
+
+// Example with GitHub badge
+<GitHubBadge count={1205} theme="light" linkUrl="https://github.com/..." iconType="star" />
 
 // Example with LinkedIn badge
 <LinkedInBadge count={101} theme="light" linkUrl="https://linkedin.com/..." />
@@ -141,7 +146,7 @@ To see more examples and how to use each specific badge, please refer to the [co
 | `featuredText` | `string` | `'FEATURED ON'` | Custom text for the "featured on" line (max 15 characters). |
 | `linkEnabled` | `boolean` | `true` | Whether to make the badge a clickable link. |
 | `displayMode` | `'count' \| 'link' \| 'none'` | `'count'` | What to display on the right side of the badge. |
-| `iconType` | `'upvote' \| 'likes' \| 'followers' \| 'upvote-arrow'` | `'upvote'` | The type of icon to use next to the count. |
+| `iconType` | `'upvote' \| 'likes' \| 'followers' \| 'upvote-arrow' \| 'star'` | `'upvote'` | The type of icon to use next to the count. |
 | `className` | `string` | - | Additional CSS classes to apply to the component. |
 
 ### Other Badge Components

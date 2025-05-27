@@ -7,7 +7,7 @@
 
 ## 🚀 Features
 
-- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, MicroLaunch
+- 🏷️ Prebuilt badges for Lovable, Reddit, Hacker News, X, Facebook, Instagram, LinkedIn, GitHub, MicroLaunch
 - 🎨 Light/dark themes with flexible sizing and layout control
 - ⚙️ Fine-grained over display — customize logo, text, icons, and count (upvotes, likes, followers, link-only, or none)
 - 🖼️ Scalable SVG components built for React — plug-and-play and pixel-perfect
@@ -26,6 +26,7 @@ Visit our interactive demo on [Homepage](https://launched-badges.lovable.app/) t
 - **Facebook**
 - **Instagram**
 - **LinkedIn**
+- **GitHub**
 - **MicroLaunch**
 - **Custom** - Create your own badges with the generic base component
 
@@ -179,6 +180,24 @@ const MyComponent = () => {
 };
 ```
 
+#### GitHub Badge
+<img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/github-light.svg" alt="GitHub Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/github-dark.svg" alt="GitHub Badge Dark" width="250"/>
+
+```jsx
+import { GitHubBadge } from '@sundaywong/launched-badges';
+
+const MyComponent = () => {
+  return (
+    <GitHubBadge 
+      count={1205}
+      linkUrl="https://github.com/..."
+      theme="light"
+      iconType="star"
+    />
+  );
+};
+```
+
 #### MicroLaunch Badge
 <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/microlaunch-light.svg" alt="MicroLaunch Badge Light" width="250"/> &nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/wongsunday/launched-badges/main/examples/previews/microlaunch-dark.svg" alt="MicroLaunch Badge Dark" width="250"/>
 ```jsx
@@ -259,7 +278,7 @@ export const MyCustomBadge: React.FC<MyCustomBadgeProps> = (props) => {
 | `linkEnabled` | `boolean` | `true` | Whether to wrap the badge in a link specified by `linkUrl`. |
 | `linkUrl` | `string` | - | URL to link to when the badge is clicked (if `linkEnabled` is true). |
 | `displayMode` | `'count' \| 'link' \| 'none'` | `'count'` | What to display on the right side: the count/icon, a link icon, or nothing. |
-| `iconType` | `'upvote' \| 'upvote-arrow' \| 'likes' \| 'followers'` | `'upvote'` | Icon type to display next to the count when `displayMode` is 'count'. |
+| `iconType` | `'upvote' \| 'upvote-arrow' \| 'likes' \| 'followers' \| 'star'` | `'upvote'` | Icon type to display next to the count when `displayMode` is 'count'. |
 | `colors` | `{ border?: string; text?: string; background?: string; }` | - | Object to override specific colors (border, text, background). Takes precedence over theme defaults. |
 | `logoComponent` | `React.ReactNode` | - | Custom React node for the logo on the left side. |
 | `viewBoxWidth` | `number` | `220` | Override the default SVG viewBox width. Adjusted automatically if `displayMode` is 'none'. |

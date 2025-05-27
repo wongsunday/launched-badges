@@ -8,13 +8,14 @@ import {
   TwitterBadge,
   MicroLaunchBadge,
   LinkedInBadge,
+  GitHubBadge,
   SocialBadge 
 } from '@sundaywong/launched-badges';
 
 type SizeMode = 'width' | 'height';
-type IconType = 'upvote' | 'upvote-arrow' | 'likes' | 'followers';
+type IconType = 'upvote' | 'upvote-arrow' | 'likes' | 'followers' | 'star';
 type DisplayMode = 'count' | 'link' | 'none';
-type Platform = 'lovable' | 'reddit' | 'hackernews' | 'facebook' | 'instagram' | 'twitter' | 'microlaunch' | 'linkedin' | 'generic';
+type Platform = 'lovable' | 'reddit' | 'hackernews' | 'facebook' | 'instagram' | 'twitter' | 'microlaunch' | 'linkedin' | 'github' | 'generic';
 
 function App() {
   const [platform, setPlatform] = useState<Platform>('lovable');
@@ -41,6 +42,7 @@ function App() {
     twitter: 'https://x.com/...',
     microlaunch: 'https://microlaunch.net/p/<project-slug>',
     linkedin: 'https://linkedin.com/...',
+    github: 'https://github.com/...',
     generic: 'https://example.com/demo-project'
   };
 
@@ -54,6 +56,7 @@ function App() {
     twitter: 'likes',
     microlaunch: 'upvote',
     linkedin: 'followers',
+    github: 'star',
     generic: 'upvote'
   };
 
@@ -116,6 +119,8 @@ function App() {
         return <MicroLaunchBadge {...commonProps} />;
       case 'linkedin':
         return <LinkedInBadge {...commonProps} />;
+      case 'github':
+        return <GitHubBadge {...commonProps} />;
       case 'generic':
         return <SocialBadge platformName={platformName} {...commonProps} />;
     }
@@ -277,6 +282,17 @@ function App() {
                 </button>
                 <button
                   type="button"
+                  onClick={() => handlePlatformChange('github')}
+                  className={`px-3 py-2 rounded-md ${
+                    platform === 'github'
+                      ? 'bg-gray-800 text-white'
+                      : 'bg-white border border-gray-300 text-gray-700'
+                  }`}
+                >
+                  GitHub
+                </button>
+                <button
+                  type="button"
                   onClick={() => handlePlatformChange('generic')}
                   className={`px-3 py-2 rounded-md ${
                     platform === 'generic'
@@ -415,7 +431,7 @@ function App() {
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Icon Type</label>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-3 gap-2">
                     <button
                       type="button"
                       onClick={() => setIconType('upvote')}
@@ -459,6 +475,17 @@ function App() {
                       }`}
                     >
                       Followers
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setIconType('star')}
+                      className={`px-3 py-2 rounded-md ${
+                        iconType === 'star'
+                          ? 'bg-indigo-600 text-white'
+                          : 'bg-white border border-gray-300 text-gray-700'
+                      }`}
+                    >
+                      Star
                     </button>
                   </div>
                 </div>

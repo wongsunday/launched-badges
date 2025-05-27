@@ -52,7 +52,7 @@ export interface SocialBadgeProps {
    * The icon type to display with the count
    * @default "upvote"
    */
-  iconType?: 'upvote' | 'upvote-arrow' | 'likes' | 'followers';
+  iconType?: 'upvote' | 'upvote-arrow' | 'likes' | 'followers' | 'star';
   /**
    * Colors for the badge elements
    */
@@ -187,6 +187,12 @@ export const SocialBadge: React.FC<SocialBadgeProps> = ({
             <circle cx="9" cy="7" r="4"/>
             <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        );
+      case 'star':
+        return (
+          <svg x="14.5" y="-1" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke={textColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z" />
           </svg>
         );
       case 'upvote':
