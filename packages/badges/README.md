@@ -152,7 +152,7 @@ const MyComponent = () => {
   return (
     <LinkedInBadge 
       count={101}
-      featuredText="FIND US ON"
+      featuredText="FEATURED ON"
       linkUrl="https://linkedin.com/..."
       iconType="likes"
       theme="light"

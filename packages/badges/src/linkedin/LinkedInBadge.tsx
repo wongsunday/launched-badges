@@ -21,7 +21,7 @@ export const LinkedInBadge: React.FC<LinkedInBadgeProps> = ({
       background: '#FFFFFF',
     },
     dark: {
-      border: '#1E222620',
+      border: '#363636',
       text: '#FFFFFF',
       background: '#1E2226',
     },
