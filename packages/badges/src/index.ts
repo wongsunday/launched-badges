@@ -17,6 +17,7 @@ export type { RedditBadgeProps } from './reddit/RedditBadge';
 export type { HackerNewsBadgeProps } from './hackernews/HackerNewsBadge';
 export type { FacebookBadgeProps } from './facebook/FacebookBadge';
 export type { InstagramBadgeProps } from './instagram/InstagramBadge';
+export type { LinkedInBadgeProps } from './linkedin/LinkedInBadge';
 export type { SocialBadgeProps } from './generic/SocialBadge';
 export type { TwitterBadgeProps } from './twitter/TwitterBadge';
 export type { MicroLaunchBadgeProps } from './microlaunch/MicroLaunchBadge';
